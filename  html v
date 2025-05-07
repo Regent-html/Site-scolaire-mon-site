@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Pré-inscription - Université de Maroua</title>
+</head>
+<body>
+    <h1>Université de Maroua</h1>
+    <h2>Formulaire de Pré-inscription</h2>
+
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Informations personnelles</legend>
+
+            <label for="nom">Nom :</label><br>
+            <input type="text" id="nom" name="nom" required><br><br>
+
+            <label for="prenom">Prénom :</label><br>
+            <input type="text" id="prenom" name="prenom" required><br><br>
+
+            <label for="sexe">Sexe :</label><br>
+            <select id="sexe" name="sexe" required>
+                <option value="">--Choisir--</option>
+                <option value="masculin">Masculin</option>
+                <option value="feminin">Féminin</option>
+            </select><br><br>
+
+            <label for="date_naissance">Date de naissance :</label><br>
+            <input type="date" id="date_naissance" name="date_naissance" required><br><br>
+
+            <label for="lieu_naissance">Lieu de naissance :</label><br>
+            <input type="text" id="lieu_naissance" name="lieu_naissance" required><br><br>
+
+            <label for="nationalite">Nationalité :</label><br>
+            <input type="text" id="nationalite" name="nationalite" required><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Informations académiques</legend>
+
+            <label for="filiere">Filière souhaitée :</label><br>
+            <select id="filiere" name="filiere" required>
+                <option value="">--Choisir--</option>
+                <option value="informatique">Informatique</option>
+                <option value="mathématiques">Mathématiques</option>
+                <option value="physique">Physique</option>
+                <option value="chimie">Chimie</option>
+                <option value="biologie">Biologie</option>
+            </select><br><br>
+
+            <label for="diplome">Diplôme obtenu :</label><br>
+            <input type="text" id="diplome" name="diplome" required><br><br>
+
+            <label for="annee_diplome">Année d'obtention :</label><br>
+            <input type="number" id="annee_diplome" name="annee_diplome" min="2000" max="2025" required><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Contacts</legend>
+
+            <label for="telephone">Téléphone :</label><br>
+            <input type="tel" id="telephone" name="telephone" required><br><br>
+
+            <label for="email">Adresse email :</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+        </fieldset>
+
+        <input type="submit" value="Soumettre">
+        <input type="reset" value="Réinitialiser">
+    </form>
+</body>
+</html>
